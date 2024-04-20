@@ -27,24 +27,32 @@
     </style>
 </head>
 <body>
-    <button id="heartButton">Show Heart</button>
-    <div id="heartContainer"></div>
+    <button id="heartButton" style="position: absolute; bottom: 10px">Show Heart</button>
+    <div id="heartContainer" style="position: absolute; left: 30%"></div>
 
     <script>
         document.getElementById('heartButton').onclick = function() {
             const heartText = `
-             ******       ******
-           **    **     **    **
-         **   Sarah is Cute :)  **
-        **                       **
-        **                       **
-         **                     **
-           **                 **
-             **             **
-               **         **
-                 **     **
-                   ** **
-                     *
+                       ___                    ___
+                   _**!!^^!!                !!^^!!**_
+                 *!!         !*           *!        !!*
+               *!!            !!       !!             !!*
+               *!!               !!    !!              !!*
+              !!                 !!!!!!                 !!
+              !!                  !!!!                  !!
+              !!                   !!                   !!
+               !!                                      !!
+                !!                                    !!
+                 !!          Sarah is Cute :)        !!
+                   !!                              !!
+                     !!                          !!
+                       !!                      !!
+                         !!                  !!
+                           !!              !!
+                             !!          !!
+                               !!      !!
+                                  !!  !!
+                                   !!!
             `;
             const heartContainer = document.getElementById('heartContainer');
             heartContainer.style.display = 'block';
