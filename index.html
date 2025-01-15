@@ -3,40 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pink Heart Page</title>
-    <style>
-        body {
-            background-color: pink;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        #heartButton {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #heartContainer {
-            white-space: pre;
-            font-family: monospace;
-            position: absolute;
-            display: none;
-        }
-    </style>
+    <title>Amazing Lootbox!</title>
+    <link rel="stylesheet" href="lootbox.css">
 </head>
 <body>
-    <button id="heartButton" style="position: absolute; bottom: 10px">Show Heart</button>
-    <div id="heartContainer" style="position: absolute; left: 10%"></div>
-
-    <script>
-        document.getElementById('heartButton').onclick = function() {
-            const heartText = 'Hello there';
-            const heartContainer = document.getElementById('heartContainer');
-            heartContainer.style.display = 'block';
-            heartContainer.textContent = heartText;
-        };
-    </script>
+    <h1>Lootbox Time: Chance to Win!</h1>
+    <div id="screen-flash" class="screen-flash"></div>
+    <h2 id="lootbox-counter">Lootboxes Remaining: 3</h2>
+    <div id="lootbox">
+        
+        <img src="pic.png" alt="Lootbox" class="lootbox-icon">
+        <div class="light-beam"></div>
+    </div>
+    <button id="open-button">Open Lootbox</button>
+    <button id="buy-more-button">Buy More Lootboxes</button>
+    <div id="reward"></div>
+    
+    <script src="lootbox.js"></script>
 </body>
 </html>
