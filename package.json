@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@react-three/drei": "^10.0.5",
+    "@react-three/fiber": "^9.1.1",
+    "autoprefixer": "^10.4.21",
+    "emailjs-com": "^3.2.0",
+    "postcss": "^8.5.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.9.3",
+    "tailwindcss": "^4.1.1",
+    "three": "^0.175.0",
+    "typed.js": "^2.1.0"
+  }
+}

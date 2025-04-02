@@ -1,0 +1,50 @@
+Arian Assadzadeh
+(571) 375-9419 | arian83@vt.edu | Blacksburg, VA
+
+Education
+Virginia Tech Blacksburg, VA
+Bachelor of Science in Computer Science; GPA: 3.88 Expected December 2025
+
+Research Experience
+National Security Institute, Virginia Tech Nov 2023 – May 2024
+Undergraduate Research Assistant
+• Contributed to a study on the Use & Abuse of personal information during political campaigns.
+• Co-created web scrapers to collect data from governmental candidates' websites.
+• Assisted with the compiling conclusions and results by analyzing gathered data through semantics and language classification.
+
+Projects
+Automated Short Answer Assessment | React, FastAPI, LLMs, NLP, Python Jan 2025 – Present
+• Created frontend in React and contributed to FastAPI backend and database structure.
+• Uses LLMs and NLP to automatically grade short answer questions with rubric alignment.
+• Provides instructors with reduced grading overhead and instant feedback for students.
+
+PassTimes iOS App | Swift, Ticketmaster API, Yelp API, Google Places API Sept 2024 – Dec 2024
+• Built iOS app to help users discover events and nearby food options with reservation support.
+• Aggregates real-time event and restaurant data with scheduling and ticketing information.
+
+Facial Expression Controlled Input System | Python, OpenCV, ML, AI Mar 2025 – Present
+• Developing input system where facial gestures act as command triggers on a computer.
+• Uses facial recognition and expression analysis to drive non-contact interactions.
+
+Financial Advisor and Social Platform | Flask, Python, Firebase, HTML/CSS/JS Aug 2023 – Oct 2024
+• Created a financial planning web app with personalized AI and a user advice forum.
+• Built end-to-end system with social integration and hosted on Netlify/Firebase.
+
+Pink Tax Nullifier | Java, SerpAPI, HTML/CSS/JS Feb 2023 – Mar 2023
+• Identifies pricing disparities based on gender and recommends cost-effective product alternatives.
+
+Fire Alarm Data Analysis Tool | Python, Tkinter SeptZ 2022 – Dec 2023
+• Desktop GUI for logging and visualizing false alarm data across locations.
+• Helped reveal patterns in recurring incidents using user input and analytics.
+
+Course Highlights
+Operating Systems, Data Structures and Algorithms, Cryptography, Machine Learning, Computer Organization, Mobile Software Development, GUI Programming, Comparative Languages, Multimedia/Hypertext, Artificial Intelligence
+
+Academic Interests
+Artificial Intelligence, Human-Computer Interaction, Natural Language Processing, Educational Technology, Privacy and Cyber Security, Applied Machine Learning
+
+Technical Skills
+Languages: Java, Python, C, JavaScript, HTML/CSS, Swift, C#, SQL
+Frameworks: React, Flask, FastAPI
+Developer Tools: Docker, Linux, Firebase, Netlify, Bash
+Libraries: NumPy, pandas, Tkinter, SerpAPI

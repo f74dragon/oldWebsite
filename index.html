@@ -3,22 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing Lootbox!</title>
-    <link rel="stylesheet" href="lootbox.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Arian Assadzadeh - Portfolio Website">
+    <title>Arian Assadzadeh | Portfolio</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Lootbox Time: Chance to Win!</h1>
-    <div id="screen-flash" class="screen-flash"></div>
-    <h2 id="lootbox-counter">Lootboxes Remaining: 3</h2>
-    <div id="lootbox">
-        
-        <img src="pic.png" alt="Lootbox" class="lootbox-icon">
-        <div class="light-beam"></div>
-    </div>
-    <button id="open-button">Open Lootbox</button>
-    <button id="buy-more-button">Buy More Lootboxes</button>
-    <div id="reward"></div>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="logo">Arian.dev</a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#terminal" class="nav-link">Terminal</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
     
-    <script src="lootbox.js"></script>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="container">
+            <ul class="mobile-nav-links">
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#terminal" class="mobile-nav-link">Terminal</a></li>
+                <li><a href="#education" class="mobile-nav-link">Education</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">Hi, I'm <span class="text-primary">Arian Assadzadeh</span></h1>
+                <h2 class="hero-subtitle">I'm a <span class="typed-element"></span></h2>
+                <p class="my-4">Computer Science Student at Virginia Tech</p>
+                <div class="my-8">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-outline my-2 mx-2">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p class="my-4">
+                        I'm a Computer Science student at Virginia Tech with a passion for building innovative software solutions.
+                        My academic interests include Artificial Intelligence, Human-Computer Interaction, Natural Language Processing,
+                        Educational Technology, Privacy and Cyber Security, and Applied Machine Learning.
+                    </p>
+                    <p class="my-4">
+                        I've gained valuable research experience at the National Security Institute at Virginia Tech,
+                        contributing to a study on the Use & Abuse of personal information during political campaigns.
+                        My role involved creating web scrapers to collect data from governmental candidates' websites and
+                        assisting with compiling conclusions through semantic and language classification analysis.
+                    </p>
+                </div>
+                
+                <div class="terminal animate-on-scroll">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="terminal-button terminal-button-red"></div>
+                            <div class="terminal-button terminal-button-yellow"></div>
+                            <div class="terminal-button terminal-button-green"></div>
+                        </div>
+                        <div class="terminal-title">visitor@arian-portfolio:~</div>
+                    </div>
+                    
+                    <div class="terminal-content">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">visitor@portfolio:~$</span>
+                            <span class="terminal-command">about</span>
+                        </div>
+                        <div class="terminal-output">Hello! I'm Arian Assadzadeh, a Computer Science student at Virginia Tech.</div>
+                        <div class="terminal-output">I'm passionate about AI, HCI, NLP, educational technology, privacy and cybersecurity.</div>
+                        <div class="terminal-output">Type 'help' to see available commands.</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">visitor@portfolio:~$</span>
+                            <span class="terminal-input" contenteditable="true" spellcheck="false"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Skills</h2>
+            
+            <div class="skills-container">
+                <!-- Languages -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-header">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3 class="skill-name">Languages</h3>
+                    </div>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>Swift</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                
+                <!-- Frameworks -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-header">
+                        <i class="fas fa-layer-group skill-icon"></i>
+                        <h3 class="skill-name">Frameworks</h3>
+                    </div>
+                    <ul>
+                        <li>React</li>
+                        <li>Flask</li>
+                        <li>FastAPI</li>
+                    </ul>
+                </div>
+                
+                <!-- Developer Tools -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-header">
+                        <i class="fas fa-tools skill-icon"></i>
+                        <h3 class="skill-name">Developer Tools</h3>
+                    </div>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Linux</li>
+                        <li>Firebase</li>
+                        <li>Netlify</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                
+                <!-- Libraries -->
+                <div class="skill-card animate-on-scroll">
+                    <div class="skill-header">
+                        <i class="fas fa-book skill-icon"></i>
+                        <h3 class="skill-name">Libraries</h3>
+                    </div>
+                    <ul>
+                        <li>NumPy</li>
+                        <li>pandas</li>
+                        <li>Tkinter</li>
+                        <li>SerpAPI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-content">
+                        <h3 class="project-title">Automated Short Answer Assessment</h3>
+                        <p>Created frontend in React and contributed to FastAPI backend and database structure. Uses LLMs and NLP to automatically grade short answer questions with rubric alignment.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">LLMs</span>
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-content">
+                        <h3 class="project-title">PassTimes iOS App</h3>
+                        <p>Built iOS app to help users discover events and nearby food options with reservation support. Aggregates real-time event and restaurant data with scheduling and ticketing information.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Swift</span>
+                            <span class="project-tag">Ticketmaster API</span>
+                            <span class="project-tag">Yelp API</span>
+                            <span class="project-tag">Google Places API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-content">
+                        <h3 class="project-title">Facial Expression Controlled Input System</h3>
+                        <p>Developing input system where facial gestures act as command triggers on a computer. Uses facial recognition and expression analysis to drive non-contact interactions.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">OpenCV</span>
+                            <span class="project-tag">ML</span>
+                            <span class="project-tag">AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-content">
+                        <h3 class="project-title">Financial Advisor and Social Platform</h3>
+                        <p>Created a financial planning web app with personalized AI and a user advice forum. Built end-to-end system with social integration and hosted on Netlify/Firebase.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-content">
+                        <h3 class="project-title">Pink Tax Nullifier</h3>
+                        <p>Identifies pricing disparities based on gender and recommends cost-effective product alternatives.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">SerpAPI</span>
+                            <span class="project-tag">HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-content">
+                        <h3 class="project-title">Fire Alarm Data Analysis Tool</h3>
+                        <p>Desktop GUI for logging and visualizing false alarm data across locations. Helped reveal patterns in recurring incidents using user input and analytics.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Tkinter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Terminal Section -->
+    <section class="section" id="terminal">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Interactive Terminal</h2>
+            
+            <div class="terminal animate-on-scroll">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <div class="terminal-button terminal-button-red"></div>
+                        <div class="terminal-button terminal-button-yellow"></div>
+                        <div class="terminal-button terminal-button-green"></div>
+                    </div>
+                    <div class="terminal-title">visitor@arian-portfolio:~</div>
+                </div>
+                
+                <div class="terminal-content">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">visitor@portfolio:~$</span>
+                        <span class="terminal-command">help</span>
+                    </div>
+                    <div class="terminal-output">Available commands:</div>
+                    <div class="terminal-output">- about: Display information about me</div>
+                    <div class="terminal-output">- skills: List my technical skills</div>
+                    <div class="terminal-output">- projects: Show my projects</div>
+                    <div class="terminal-output">- contact: How to reach me</div>
+                    <div class="terminal-output">- education: My educational background</div>
+                    <div class="terminal-output">- cv: Download my resume</div>
+                    <div class="terminal-output">- clear: Clear the terminal</div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">visitor@portfolio:~$</span>
+                        <span class="terminal-input" contenteditable="true" spellcheck="false"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center my-8 animate-on-scroll">
+                <p>Try typing commands like 'about', 'skills', 'projects', 'education', or 'contact'</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Education</h2>
+            
+            <div class="education-container animate-on-scroll">
+                <div class="education-card">
+                    <h3>Virginia Tech</h3>
+                    <p class="education-location">Blacksburg, VA</p>
+                    <p class="education-degree">Bachelor of Science in Computer Science</p>
+                    <p class="education-dates">Expected December 2025</p>
+                    <p class="education-gpa">GPA: 3.88</p>
+                    
+                    <div class="education-courses">
+                        <h4>Course Highlights</h4>
+                        <ul class="courses-list">
+                            <li>Operating Systems</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Cryptography</li>
+                            <li>Machine Learning</li>
+                            <li>Computer Organization</li>
+                            <li>Mobile Software Development</li>
+                            <li>GUI Programming</li>
+                            <li>Comparative Languages</li>
+                            <li>Multimedia/Hypertext</li>
+                            <li>Artificial Intelligence</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="education-research">
+                    <h3>Research Experience</h3>
+                    <h4>National Security Institute, Virginia Tech</h4>
+                    <p class="research-dates">November 2023 – May 2024</p>
+                    <p class="research-title">Undergraduate Research Assistant</p>
+                    <ul class="research-details">
+                        <li>Contributed to a study on the Use & Abuse of personal information during political campaigns.</li>
+                        <li>Co-created web scrapers to collect data from governmental candidates' websites.</li>
+                        <li>Assisted with the compiling conclusions and results by analyzing gathered data through semantics and language classification.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Contact Me</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:arian83@vt.edu">arian83@vt.edu</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:+15713759419">(571) 375-9419</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Blacksburg, VA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form animate-on-scroll">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-textarea" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <p>&copy; <span id="current-year">2025</span> Arian Assadzadeh. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    <script src="dist/bundle.js"></script>
 </body>
 </html>
